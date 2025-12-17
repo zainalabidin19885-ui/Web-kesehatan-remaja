@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouthHealth Hub - Kesehatan Remaja</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="login-page" class="page active login-page">
+        <div class="menu-dots" onclick="toggleMenu()" style="position: absolute; top: 20px; right: 20px;">⋯</div>
+        <div class="dropdown" id="menu">
+            <a href="#" onclick="showHome()">Ke Halaman Utama</a>
+            <a href="#" onclick="logout()">Log Out</a>
+        </div>
+        <div class="login-container">
+            <img src="https://source.unsplash.com/150x150/?teenager,diverse,inclusive" alt="Ilustrasi remaja inklusif dari berbagai etnis, gender, dan kemampuan" class="illustration">
+            <h2>Masuk ke YouthHealth Hub</h2>
+            <input type="text" id="username" placeholder="Username" value="9071">
+            <input type="password" id="password" placeholder="Sandi" value="1235">
+            <button onclick="login()">Masuk Sekarang!</button>
+        </div>
+    </div>
+
+    <!-- Home Page -->
+    <div id="home-page" class="page">
+        <header>
+            <div class="logo">YouthHealth Hub</div>
+            <nav>
+                <a href="#mental">Kesehatan Mental</a>
+                <a href="#nutrition">Tips Nutrisi</a>
+                <a href="#chat">Chat Edukasi</a>
+            </nav>
+            <div class="menu-dots" onclick="toggleMenu()">⋯</div>
+            <div class="dropdown" id="menu">
+                <a href="#" onclick="showHome()">Ke Halaman Utama</a>
+                <a href="#" onclick="logout()">Log Out</a>
+            </div>
+        </header>
+
+        <section class="section" id="mental">
+            <h2>Artikel Kesehatan Mental</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://source.unsplash.com/400x200/?teen,meditation,diverse" alt="Ilustrasi remaja inklusif meditasi, mewakili kesehatan mental">
+                    <div class="card-content">
+                        <h3>Mengatasi Stres Sekolah</h3>
+                        <p>Tips sederhana untuk remaja menghadapi tekanan akademik dengan cara yang positif.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://source.unsplash.com/400x200/?teen,therapy,diverse" alt="Ilustrasi remaja inklusif dalam sesi terapi, mewakili dukungan kesehatan mental">
+                    <div class="card-content">
+                        <h3>Pentingnya Bicara dengan Orang Tua</h3>
+                        <p>Cara membangun komunikasi terbuka untuk kesehatan mental yang lebih baik.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="nutrition">
+            <h2>Tips Nutrisi</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://source.unsplash.com/400x200/?teen,fruit,diverse" alt="Ilustrasi remaja inklusif makan buah, mewakili nutrisi sehat">
+                    <div class="card-content">
+                        <h3>Makan Buah Setiap Hari!</h3>
+                        <p>Manfaat buah untuk energi dan kesehatan tubuh remaja.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://source.unsplash.com/400x200/?teen,water,diverse" alt="Ilustrasi remaja inklusif minum air, mewakili hidrasi penting">
+                    <div class="card-content">
+                        <h3>Jaga Hidrasi Tubuh</h3>
+                        <p>Tips minum air cukup untuk performa harian yang optimal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="chat">
+            <div class="chat-widget">
+                <img src="https://source.unsplash.com/80x80/?teen,chat,diverse" alt="Avatar bot remaja inklusif untuk chat edukasi" class="chat-avatar">
+                <h3>Fitur Chat Edukasi</h3>
+                <p>Halo! Mau tanya tentang kesehatan mental atau nutrisi? Mulai chat sekarang!</p>
+                <button onclick="startChat()">Mulai Chat</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2023 YouthHealth Hub. <a href="#">Privasi</a> | <a href="#">Kontak</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
